@@ -1,0 +1,27 @@
+.cartItems__product {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cartItems__details {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.cartItems__product img {
+  height: 150px;
+}
+
+.cartItems__product button {
+  height: 20px;
+}
+
+#counter {
+  margin: 5px;
+}
+
+#remove__btn {
+  color: red;
+}
