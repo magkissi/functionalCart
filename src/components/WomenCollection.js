@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import "./womenCollection.css";
 import { itemsWomen } from "./itemsWomen";
 import Card from "./card";
 
-function WomenCollection() {
+function WomenCollection({ addItem }) {
   const womenItems = itemsWomen.map((item) => {
     return (
       <Card
@@ -12,6 +12,8 @@ function WomenCollection() {
         image={item.image}
         name={item.name}
         price={item.price}
+        currency={item.currency}
+        addingToCart={addItem}
       />
     );
   });
@@ -19,9 +21,7 @@ function WomenCollection() {
   return (
     <div className="container">
       <div>
-        <Link>
-          <p>Women Collection</p>
-        </Link>
+        <p>Women Collection</p>
       </div>
 
       <div className="product__container">{womenItems}</div>

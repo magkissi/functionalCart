@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import CardCollection from "./components/CardCollection";
+import Collections from "./components/collections";
 import Nav from "./components/Nav";
 import Cart from "./components/cart";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CutleryCollection from "./components/CutleryCollection";
+import WomenCollection from "./components/WomenCollection";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -62,7 +64,7 @@ function App() {
           <Route
             path="/"
             exact
-            component={() => <CardCollection addItem={addToCart} />}
+            component={() => <Collections addItem={addToCart} />}
           />
           <Route
             path="/cart"
@@ -74,6 +76,14 @@ function App() {
                 decreaseItem={handleDecrement}
               />
             )}
+          />
+          <Route
+            path="/collections/womenFashion"
+            component={() => <WomenCollection addItem={addToCart} />}
+          />
+          <Route
+            path="/collections/cutlery"
+            component={() => <CutleryCollection addItem={addToCart} />}
           />
         </Switch>
       </div>

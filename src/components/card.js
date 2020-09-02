@@ -15,7 +15,7 @@ function Card({ id, image, name, price, description, currency, addingToCart }) {
   return (
     <div className="card__container">
       <div className="card__img">
-        <img src={image} alt={description} />
+        <img className="card__img" src={image} alt={description} />
       </div>
       <div className="card__details">
         <h1>{name}</h1>

@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import "./cutleryCollection.css";
 import { itemsCutlery } from "./itemsCutlery";
 import Card from "./card";
 
-function CutleryCollection() {
+function CutleryCollection({ addItem }) {
   const cutleryItems = itemsCutlery.map((item) => {
     return (
       <Card
@@ -12,15 +12,16 @@ function CutleryCollection() {
         image={item.image}
         name={item.name}
         price={item.price}
+        currency={item.currency}
+        addingToCart={addItem}
       />
     );
   });
+
   return (
     <div className="container">
       <div>
-        <Link>
-          <p>Cutlery Collection</p>
-        </Link>
+        <p>Cutlery Collection</p>
       </div>
       <div className="product__container">{cutleryItems}</div>
     </div>
