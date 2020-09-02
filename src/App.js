@@ -87,8 +87,8 @@ function App() {
             component={() => <CutleryCollection addItem={addToCart} />}
           />
         </Switch>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }

@@ -1,6 +1,22 @@
-.nav__container {
+#nav__container {
   display: flex;
   justify-content: center;
   width: 100%;
   background-color: darkcyan;
+  height: 60px;
+}
+
+.nav__container1 img {
+  height: 60px;
+}
+
+.nav__container1 {
+  display: flex;
+  width: 10%;
+}
+
+.nav__links {
+  display: flex;
+  width: 90%;
+  justify-content: center;
 }

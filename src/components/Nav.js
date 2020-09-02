@@ -8,14 +8,20 @@ function Nav(props) {
   }, 0);
 
   return (
-    <div className="nav__container">
-      <Link to="/">
-        <p>Home</p>
-      </Link>
-      <p>|</p>
-      <Link to="/cart">
-        <p>Cart-{totalCount}</p>
-      </Link>
+    <div id="nav__container">
+      <div className="nav__container1">
+        <h5>DoorStep Online Shop</h5>
+        <img src="/logo.jpg" alt="logo" />
+      </div>
+      <div className="nav__links">
+        <Link to="/">
+          <p>Home</p>
+        </Link>
+        <p>|</p>
+        <Link to="/cart">
+          <p>Cart-{totalCount}</p>
+        </Link>
+      </div>
     </div>
   );
 }
