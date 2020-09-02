@@ -1,0 +1,16 @@
+.footer__content2 {
+  display: flex;
+  justify-content: center;
+  background-color: darkcyan;
+}
+
+.footer__content {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.footer__content1 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(143, 161, 112);
+}

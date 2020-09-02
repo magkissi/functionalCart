@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Collections from "./components/collections";
 import Nav from "./components/Nav";
 import Cart from "./components/cart";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CutleryCollection from "./components/CutleryCollection";
 import WomenCollection from "./components/WomenCollection";
@@ -86,6 +87,7 @@ function App() {
             component={() => <CutleryCollection addItem={addToCart} />}
           />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

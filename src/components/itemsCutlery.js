@@ -37,4 +37,44 @@ export const itemsCutlery = [
     price: 100,
     currency: "$",
   },
+
+  {
+    id: 456715,
+    image:
+      "https://images-na.ssl-images-amazon.com/images/I/71FDSqRpGtL._AC_SX569_.jpg",
+    description: "utensil-4",
+    name: "Magic Bullet Blender",
+    price: 50,
+    currency: "$",
+  },
+
+  {
+    id: 456712,
+    image:
+      "https://images-na.ssl-images-amazon.com/images/I/618jqSXrLwL._AC_SX569_.jpg",
+    description: "utensil-5",
+    name: "Silicon cooking utensils",
+    price: 20,
+    currency: "$",
+  },
+
+  {
+    id: 456713,
+    image:
+      "https://assets.croma.com/medias/sys_master/images/images/hc4/hd3/8872173404190/205693_pjpeg.jpg",
+    description: "utensil-6",
+    name: "Plastic Hand Blender",
+    price: 40,
+    currency: "$",
+  },
+
+  {
+    id: 456714,
+    image:
+      "https://images-na.ssl-images-amazon.com/images/I/51Bxl-otC4L._SX679_.jpg",
+    description: "utensil-7",
+    name: "Non-Stick cooking utensils",
+    price: 100,
+    currency: "$",
+  },
 ];
