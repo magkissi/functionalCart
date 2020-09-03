@@ -16,6 +16,7 @@
 
 .cartItems__product button {
   height: 20px;
+  cursor: pointer;
 }
 
 #counter {

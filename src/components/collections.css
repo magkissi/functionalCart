@@ -11,13 +11,15 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 30px;
+  width: 80%;
 }
 
 .collection__sideBar {
-  margin-left: 5px;
   margin-top: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   height: 250px;
+  width: 200px;
+  padding-left: 10px;
 }
 
 .collection__sideBar a {
@@ -26,4 +28,8 @@
 
 .collection__sideBar a:hover {
   color: turquoise;
+}
+
+.collection__sideBar p {
+  font-size: 12px;
 }

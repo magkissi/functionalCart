@@ -20,6 +20,9 @@ function Collections({ addItem }) {
   return (
     <div className="collection__container">
       <div className="collection__sideBar">
+        <h5>
+          <u>Collections</u>
+        </h5>
         <Link to="/collections/cutlery">
           <p>Kitchen Collections</p>
         </Link>

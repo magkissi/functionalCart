@@ -37,3 +37,8 @@
 .card__container button:focus {
   outline: none;
 }
+
+.card__container button:hover {
+  cursor: pointer;
+  background-color: teal;
+}

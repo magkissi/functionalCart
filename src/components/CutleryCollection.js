@@ -8,6 +8,7 @@ function CutleryCollection({ addItem }) {
   const cutleryItems = itemsCutlery.map((item) => {
     return (
       <Card
+        id={item.id}
         key={item.id}
         image={item.image}
         name={item.name}

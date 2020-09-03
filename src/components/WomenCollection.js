@@ -8,6 +8,7 @@ function WomenCollection({ addItem }) {
   const womenItems = itemsWomen.map((item) => {
     return (
       <Card
+        id={item.id}
         key={item.id}
         image={item.image}
         name={item.name}
