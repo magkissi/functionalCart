@@ -3,12 +3,27 @@
   justify-content: center;
   width: 100%;
   margin: 10px;
-  background-color: darkseagreen;
+  background-color: white;
   margin: 0px;
 }
 
 .product__container {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 10px;
+  padding-left: 30px;
+}
+
+.collection__sideBar {
+  margin-left: 5px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  height: 250px;
+}
+
+.collection__sideBar a {
+  text-decoration: none;
+}
+
+.collection__sideBar a:hover {
+  color: turquoise;
 }

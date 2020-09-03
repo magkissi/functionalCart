@@ -18,11 +18,11 @@ function Card({ id, image, name, price, description, currency, addingToCart }) {
         <img className="card__img" src={image} alt={description} />
       </div>
       <div className="card__details">
-        <h1>{name}</h1>
-        <h4>
+        <h4>{name}</h4>
+        <h5>
           {currency}
           {price}
-        </h4>
+        </h5>
       </div>
       <button onClick={handleClick}>Add to Cart</button>
     </div>

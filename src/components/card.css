@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 400px;
-  width: 300px;
+  height: 250px;
+  width: 200px;
   margin-right: 15px;
   margin-top: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card__container img {
-  width: 200px;
+  width: 100px;
 }
 
 .card__details {
@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 150px;
+  height: 100px;
 }
 .card__container button {
   width: 100%;
