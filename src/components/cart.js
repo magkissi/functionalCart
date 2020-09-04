@@ -6,13 +6,13 @@ import CartHeadings from "./cartHeadings";
 function Cart({ cartProducts, increaseItem, decreaseItem, removeItem }) {
   const makePayment = (amount) => {
     window.FlutterwaveCheckout({
-      public_key: "FLWPUBK_TEST-b4d88b61b7a5eb4ae123aec26df08768-X",
+      public_key: process.env.REACT_APP_PUBLIC_KEY,
       tx_ref: "hooli-tx-1920bbtyt",
       amount: amount,
       currency: "USD",
       payment_options: "card, mobilemoneyghana, ussd",
       // specified redirect URL
-      redirect_url: "https//:localhost:3000",
+      redirect_url: "",
       meta: {
         consumer_id: 23,
         consumer_mac: "92a3-912ba-1192a",
@@ -31,7 +31,7 @@ function Cart({ cartProducts, increaseItem, decreaseItem, removeItem }) {
       customizations: {
         title: "My store",
         description: "Payment for items in cart",
-        logo: "https://assets.piedpiper.com/logo.png",
+        logo: "/logo.jpg",
       },
     });
   };
@@ -75,6 +75,13 @@ function Cart({ cartProducts, increaseItem, decreaseItem, removeItem }) {
           </div>
           <div className="cart__btn">
             <button onClick={() => makePayment(totalAmount)}>Pay Now</button>
+          </div>
+          <div className="test">
+            Please use these details to test payment:
+            <div>Card number: 5531 88665214 2950</div>
+            <div>cvv: 564</div>
+            <div>Expiry: 09/32</div>
+            <div>OTP: 12345</div>
           </div>
         </div>
       ) : (
