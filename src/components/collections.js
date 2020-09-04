@@ -33,7 +33,7 @@ function Collections({ addItem }) {
           <p>General Collection</p>
         </Link>
       </div>
-      <div className="product__container">{mappedCards}</div>
+      <div className="collectionProduct__container">{mappedCards}</div>
     </div>
   );
 }
