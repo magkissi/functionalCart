@@ -10,7 +10,7 @@ function Nav(props) {
   return (
     <div id="nav__container">
       <div className="nav__container1">
-        <h5>DoorStep Online Shop</h5>
+        <h5>@Door_Step Online Shop</h5>
         <img src="/logo.jpg" alt="logo" />
       </div>
       <div className="nav__links">

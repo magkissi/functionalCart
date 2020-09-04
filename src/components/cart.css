@@ -28,7 +28,8 @@
 
 .cart__total {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: space-between;
   width: 50%;
   border-top-style: solid;
 }
@@ -42,4 +43,10 @@
 .cart__heading {
   width: 65%;
   padding-left: 200px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
