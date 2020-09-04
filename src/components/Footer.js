@@ -33,9 +33,6 @@ function Footer() {
           <p>DoorStep Currency Converter</p>
         </div>
       </div>
-      <div className="footer__content3">
-        <p></p>
-      </div>
     </div>
   );
 }

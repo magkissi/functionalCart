@@ -7,9 +7,12 @@
 .cartItems__details {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
 }
 
+.cartItems__details > * {
+  width: 100px;
+}
 .cartItems__product img {
   height: 150px;
 }

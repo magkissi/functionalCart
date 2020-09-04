@@ -14,3 +14,9 @@
   justify-content: center;
   background-color: white;
 }
+
+.footer__container {
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
+}

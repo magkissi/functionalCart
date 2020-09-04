@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Collections from "./components/collections";
 import Nav from "./components/Nav";
 import Cart from "./components/cart";
+import "./App.css";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CutleryCollection from "./components/CutleryCollection";
@@ -59,7 +60,7 @@ function App() {
   };
   return (
     <Router>
-      <div>
+      <div className="app">
         <Nav products={cart} />
         <Switch>
           <Route
@@ -87,8 +88,10 @@ function App() {
             component={() => <CutleryCollection addItem={addToCart} />}
           />
         </Switch>
+        <div className="app__footer">
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </Router>
   );
 }

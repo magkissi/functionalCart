@@ -20,3 +20,14 @@
   width: 90%;
   justify-content: center;
 }
+
+.nav__links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__links p {
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
