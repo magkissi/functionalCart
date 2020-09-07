@@ -21,9 +21,6 @@ function Footer() {
         <div className="footer__content">
           <h4>Make Money with Us</h4>
           <p>Sell on DoorStep</p>
-          <p>Blog</p>
-          <p>Sustainability</p>
-          <p>Investor Relations</p>
         </div>
         <div>
           <h4>DoorStep Payment Products</h4>

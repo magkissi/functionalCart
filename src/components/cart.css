@@ -54,3 +54,18 @@
 .test {
   text-align: center;
 }
+
+@media only screen and (max-width: 731px) {
+  .cart__heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .cart__product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
